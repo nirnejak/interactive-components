@@ -9,14 +9,14 @@ import classNames from "@/utils/classNames"
 const initialSeconds = 30
 
 const DynamicIsland: React.FC = () => {
-  const [state, setState] = React.useState(0)
+  const [activeTab, setActiveTab] = React.useState(0)
 
-  const [seconds, setSeconds] = React.useState<number>(initialSeconds)
-  const [isActive, setIsActive] = React.useState<boolean>(false)
+  const [seconds, setSeconds] = React.useState(initialSeconds)
+  const [isTimerActive, setIsTimerActive] = React.useState(false)
 
   React.useEffect(() => {
     let intervalId: NodeJS.Timeout
-    if (isActive) {
+    if (isTimerActive) {
       intervalId = setInterval(() => {
         setSeconds((prevSeconds) => {
           if (prevSeconds <= 1) {
@@ -30,10 +30,10 @@ const DynamicIsland: React.FC = () => {
     return () => {
       clearInterval(intervalId)
     }
-  }, [isActive])
+  }, [isTimerActive])
 
   const renderIslandContent = (): React.ReactNode => {
-    switch (state) {
+    switch (activeTab) {
       case 0:
         return null
       case 1:
@@ -52,13 +52,13 @@ const DynamicIsland: React.FC = () => {
               <button
                 className="ml-2 rounded-full bg-yellow-600/40 p-3 text-yellow-600"
                 onClick={() => {
-                  if (seconds === 0 && isActive) {
+                  if (seconds === 0 && isTimerActive) {
                     setSeconds(initialSeconds)
                   }
-                  setIsActive(!isActive)
+                  setIsTimerActive(!isTimerActive)
                 }}
               >
-                {isActive ? (
+                {isTimerActive ? (
                   seconds === 0 ? (
                     <ArrowCounterClockwise />
                   ) : (
@@ -71,7 +71,7 @@ const DynamicIsland: React.FC = () => {
               <button
                 className="rounded-full bg-zinc-700 p-3"
                 onClick={() => {
-                  setState(0)
+                  setActiveTab(0)
                 }}
               >
                 <Cross />
@@ -85,8 +85,8 @@ const DynamicIsland: React.FC = () => {
     }
   }
 
-  const stateClass = React.useMemo(() => {
-    switch (state) {
+  const tabClass = React.useMemo(() => {
+    switch (activeTab) {
       case 0:
         return "w-32 h-10"
       case 1:
@@ -94,13 +94,13 @@ const DynamicIsland: React.FC = () => {
       case 2:
         return "w-72 h-20"
     }
-  }, [state])
+  }, [activeTab])
 
   return (
     <div className="flex flex-col items-center justify-center gap-3 text-white">
       <div
         className={classNames(
-          stateClass,
+          tabClass,
           "flex items-center justify-between rounded-full bg-black px-2 text-sm transition-all ease-out"
         )}
       >
@@ -109,13 +109,13 @@ const DynamicIsland: React.FC = () => {
       <div className="mt-10 text-zinc-200">
         <Tabs
           tabsOptions={["Idle", "Ring", "Timer"]}
-          activeTab={state}
-          setActiveTab={(tab) => {
-            if (tab !== 2) {
+          activeTab={activeTab}
+          setActiveTab={(nextTab) => {
+            if (nextTab !== 2) {
               setSeconds(initialSeconds)
             }
-            setIsActive(tab === 2)
-            setState(tab)
+            setIsTimerActive(nextTab === 2)
+            setActiveTab(nextTab)
           }}
         />
       </div>
