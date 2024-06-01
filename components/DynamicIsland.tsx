@@ -32,10 +32,6 @@ const DynamicIsland: React.FC = () => {
     }
   }, [isActive])
 
-  const handleStartPause = React.useCallback(() => {
-    setIsActive(!isActive)
-  }, [isActive])
-
   const renderIslandContent = (): React.ReactNode => {
     switch (state) {
       case 0:
@@ -59,7 +55,7 @@ const DynamicIsland: React.FC = () => {
                   if (seconds === 0 && isActive) {
                     setSeconds(initialSeconds)
                   }
-                  handleStartPause()
+                  setIsActive(!isActive)
                 }}
               >
                 {isActive ? (
@@ -115,12 +111,10 @@ const DynamicIsland: React.FC = () => {
           tabsOptions={["Idle", "Ring", "Timer"]}
           activeTab={state}
           setActiveTab={(tab) => {
-            if (tab === 2) {
-              handleStartPause()
-            } else {
-              handleStartPause()
+            if (tab !== 2) {
               setSeconds(initialSeconds)
             }
+            setIsActive(tab === 2)
             setState(tab)
           }}
         />
