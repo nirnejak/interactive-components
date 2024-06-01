@@ -26,12 +26,12 @@ const Tabs: React.FC<Props> = ({
     >
       <div
         style={highlightStyles}
-        className="absolute left-0 h-full rounded-md bg-zinc-800 transition-all"
+        className="absolute left-0 h-full rounded-lg bg-zinc-800 transition-all"
       />
       {tabsOptions.map((tab, index) => (
         <button
           key={index}
-          className="relative inline-block rounded-md border border-transparent px-3 py-1.5 outline-none"
+          className="relative inline-block rounded-lg px-3.5 py-1.5 outline-none"
           onClick={() => {
             setActiveTab(index)
           }}
