@@ -4,9 +4,9 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "Next.js TypeScript Starter",
-    "short_name": "Next.js TypeScript Starter",
-    "description": "Next.js TypeScript Starter with basic configuration",
+    "name": "Interactive Components",
+    "short_name": "Interactive Components",
+    "description": "A Gallery of interactive components made with React, TailwindCSS, Framer Motion and TypeScript",
     "icons": [
         {
             "src": "/path-to-icons/icon-192x192.png",

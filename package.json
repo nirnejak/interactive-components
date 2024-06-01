@@ -1,6 +1,6 @@
 {
   "name": "interactive-components",
-  "description": "Next.js TypeScript Starter",
+  "description": "A Gallery of interactive components made with React, TailwindCSS, Framer Motion and TypeScript",
   "version": "1.0.0",
   "author": "Jitendra Nirnejak <jeetnirnejak@gmail.com>",
   "scripts": {

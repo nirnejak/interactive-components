@@ -1,22 +1,8 @@
 <h1 align="center">
-  Next.js TypeScript Starter
+  Interactive Components
 </h1>
 
 ---
-
-## Included
-
-- `seo.ts` util to generate SEO metadata
-- `manifest.json` for site info
-- `classnames` util for easily managing classes
-
-## Additional Packages Used
-
-- Tailwind CSS - for styling
-- Framer Motion - for animations
-- Akar Icons - library for rounded icons
-- use-sound - for using sounds
-- React Query - for data fetching and caching
 
 ## Available Scripts
 
