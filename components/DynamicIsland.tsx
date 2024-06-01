@@ -62,7 +62,7 @@ const DynamicIsland: React.FC = () => {
                   seconds === 0 ? (
                     <ArrowCounterClockwise />
                   ) : (
-                    <Pause />
+                    <Pause strokeWidth={5} />
                   )
                 ) : (
                   <Play />
@@ -100,25 +100,24 @@ const DynamicIsland: React.FC = () => {
     <div className="flex flex-col items-center justify-center gap-3 text-white">
       <div
         className={classNames(
-          tabClass,
-          "flex items-center justify-between rounded-full bg-black px-2 text-sm transition-all ease-out"
+          "flex items-center justify-between rounded-full bg-black px-2 text-sm transition-all ease-out",
+          tabClass
         )}
       >
         {renderIslandContent()}
       </div>
-      <div className="mt-10 text-zinc-200">
-        <Tabs
-          tabsOptions={["Idle", "Ring", "Timer"]}
-          activeTab={activeTab}
-          setActiveTab={(nextTab) => {
-            if (nextTab !== 2) {
-              setSeconds(initialSeconds)
-            }
-            setIsTimerActive(nextTab === 2)
-            setActiveTab(nextTab)
-          }}
-        />
-      </div>
+      <Tabs
+        className="mt-10 text-zinc-200"
+        tabsOptions={["Idle", "Ring", "Timer"]}
+        activeTab={activeTab}
+        setActiveTab={(nextTab) => {
+          if (nextTab !== 2) {
+            setSeconds(initialSeconds)
+          }
+          setIsTimerActive(nextTab === 2)
+          setActiveTab(nextTab)
+        }}
+      />
     </div>
   )
 }
