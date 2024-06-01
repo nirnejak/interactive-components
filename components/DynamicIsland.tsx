@@ -1,7 +1,7 @@
 "use client"
 import * as React from "react"
 
-import { Bell, Cross, Pause, Play } from "akar-icons"
+import { ArrowCounterClockwise, Bell, Cross, Pause, Play } from "akar-icons"
 
 import Tabs from "./Tabs"
 import classNames from "@/utils/classNames"
@@ -43,8 +43,10 @@ const DynamicIsland: React.FC = () => {
       case 1:
         return (
           <>
-            <Bell size={17} />
-            <span>Ring</span>
+            <span className="flex w-10 items-center justify-center rounded-full bg-red-500 py-1.5">
+              <Bell size={16} />
+            </span>
+            <span className="mr-2">Ring</span>
           </>
         )
       case 2:
@@ -52,12 +54,23 @@ const DynamicIsland: React.FC = () => {
           <>
             <div className="flex animate-fadeIn gap-2">
               <button
-                className="rounded-full bg-yellow-600/40 p-3 text-yellow-600"
+                className="ml-2 rounded-full bg-yellow-600/40 p-3 text-yellow-600"
                 onClick={() => {
+                  if (seconds === 0 && isActive) {
+                    setSeconds(initialSeconds)
+                  }
                   handleStartPause()
                 }}
               >
-                {isActive ? <Pause /> : <Play />}
+                {isActive ? (
+                  seconds === 0 ? (
+                    <ArrowCounterClockwise />
+                  ) : (
+                    <Pause />
+                  )
+                ) : (
+                  <Play />
+                )}
               </button>
               <button
                 className="rounded-full bg-zinc-700 p-3"
@@ -69,7 +82,7 @@ const DynamicIsland: React.FC = () => {
               </button>
             </div>
             <span className="mr-3 text-4xl font-light text-yellow-600">
-              0:{seconds}
+              0:{seconds.toString().padStart(2, "0")}
             </span>
           </>
         )
@@ -88,11 +101,11 @@ const DynamicIsland: React.FC = () => {
   }, [state])
 
   return (
-    <div className="flex flex-col items-center justify-center gap-3">
+    <div className="flex flex-col items-center justify-center gap-3 text-white">
       <div
         className={classNames(
           stateClass,
-          "mt-10 flex items-center justify-between rounded-full bg-black px-3.5 text-sm text-white transition-all ease-out"
+          "flex items-center justify-between rounded-full bg-black px-2 text-sm transition-all ease-out"
         )}
       >
         {renderIslandContent()}
