@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-typescript-starter",
+  "name": "interactive-components",
   "description": "Next.js TypeScript Starter",
   "version": "1.0.0",
   "author": "Jitendra Nirnejak <jeetnirnejak@gmail.com>",
@@ -67,9 +67,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nirnejak/nextjs-typescript-starter"
+    "url": "https://github.com/nirnejak/interactive-components"
   },
   "bugs": {
-    "url": "https://github.com/nirnejak/nextjs-typescript-starter/issues"
+    "url": "https://github.com/nirnejak/interactive-components/issues"
   }
 }
