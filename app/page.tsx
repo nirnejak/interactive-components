@@ -2,7 +2,9 @@ import * as React from "react"
 
 import { type Metadata } from "next"
 
-import DynamicIsland from "@/components/DynamicIsland"
+import { ArrowRight } from "akar-icons"
+import Link from "next/link"
+
 import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({
@@ -15,7 +17,17 @@ export const metadata: Metadata = generateMetadata({
 const Home: React.FC = () => {
   return (
     <main className="grid h-screen place-content-center">
-      <DynamicIsland />
+      <div className="max-w-[580px]">
+        <Link
+          href="/dynamic-island/"
+          className="group flex items-center gap-1.5 text-zinc-200"
+        >
+          <span>Dynamic Island</span>
+          <span className="transition-all group-hover:translate-x-1">
+            <ArrowRight size={16} />
+          </span>
+        </Link>
+      </div>
     </main>
   )
 }
