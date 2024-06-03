@@ -72,6 +72,7 @@ const DynamicIsland: React.FC = () => {
                 className="rounded-full bg-zinc-700 p-3"
                 onClick={() => {
                   setActiveTab(0)
+                  setSeconds(initialSeconds)
                 }}
               >
                 <Cross />
