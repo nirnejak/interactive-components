@@ -2,16 +2,12 @@ import * as React from "react"
 
 import type { Viewport } from "next"
 
-import { Inter } from "next/font/google"
+import { GeistMono } from "geist/font/mono"
+import { GeistSans } from "geist/font/sans"
 
 import classNames from "utils/classNames"
 
 import "../styles/main.css"
-
-const sansFont = Inter({
-  variable: "--sans-font",
-  subsets: ["latin"],
-})
 
 export const viewport: Viewport = {
   themeColor: "#000000",
@@ -28,7 +24,8 @@ const RootLayout: React.FC<Props> = ({ children }) => {
 
       <body
         className={classNames(
-          sansFont.variable,
+          GeistSans.variable,
+          GeistMono.variable,
           "overflow-x-hidden bg-zinc-900 font-sans"
         )}
       >
