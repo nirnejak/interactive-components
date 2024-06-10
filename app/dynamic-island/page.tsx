@@ -12,7 +12,7 @@ export const metadata: Metadata = generateMetadata({
     "A Dynamic Island built for web with React, TypeScript and TailwindCSS",
 })
 
-const Home: React.FC = () => {
+const DynamicIslandPage: React.FC = () => {
   return (
     <main className="grid h-screen place-content-center">
       <DynamicIsland />
@@ -20,4 +20,4 @@ const Home: React.FC = () => {
   )
 }
 
-export default Home
+export default DynamicIslandPage
