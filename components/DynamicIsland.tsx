@@ -3,7 +3,7 @@ import * as React from "react"
 
 import { ArrowCounterClockwise, Bell, Cross, Pause, Play } from "akar-icons"
 
-import Tabs from "./Tabs"
+import Tabs from "./atoms/Tabs"
 import classNames from "@/utils/classNames"
 
 const initialSeconds = 30
