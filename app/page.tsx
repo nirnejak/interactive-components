@@ -36,6 +36,15 @@ const Home: React.FC = () => {
             <ArrowRight size={16} />
           </span>
         </Link>
+        <Link
+          href="/exit-animation/"
+          className="group flex items-center gap-1.5 text-zinc-200"
+        >
+          <span>Exit Animation</span>
+          <span className="transition-all group-hover:translate-x-1">
+            <ArrowRight size={16} />
+          </span>
+        </Link>
       </div>
     </main>
   )
