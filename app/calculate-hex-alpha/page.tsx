@@ -6,7 +6,7 @@ import CalculateHexAlpha from "@/components/CalculateHexAlpha"
 import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({
-  path: "/",
+  path: "/calculate-hex-alpha/",
   title: "Calculate HEX Alpha | Interactive Components",
   description: "Calculate alpha value for HEX color values",
 })

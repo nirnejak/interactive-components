@@ -6,7 +6,7 @@ import ExitAnimation from "@/components/ExitAnimation"
 import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({
-  path: "/",
+  path: "/exit-animation/",
   title: "Exit Animation | Interactive Components",
   description: "Exit and Entry animation for elements",
 })

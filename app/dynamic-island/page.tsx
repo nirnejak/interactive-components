@@ -6,7 +6,7 @@ import DynamicIsland from "@/components/DynamicIsland"
 import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({
-  path: "/",
+  path: "/dynamic-island/",
   title: "Dynamic Island | Interactive Components",
   description:
     "A Dynamic Island built for web with React, TypeScript and TailwindCSS",
