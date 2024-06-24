@@ -15,7 +15,7 @@ const CalculateHexAlpha: React.FC = () => {
               initial={{ opacity: 0, translateY: 10 }}
               animate={{ opacity: 1, translateY: 0 }}
               exit={{ opacity: 0, translateY: -10 }}
-              className="rounded-full bg-zinc-900 px-7 py-3 text-sm text-slate-50"
+              className="rounded-full bg-zinc-900 px-7 py-3 text-sm text-zinc-50"
             >
               Element
             </motion.div>
@@ -23,7 +23,7 @@ const CalculateHexAlpha: React.FC = () => {
         </AnimatePresence>
       </div>
       <button
-        className="rounded bg-slate-300 px-3 py-1.5 text-sm text-slate-900"
+        className="rounded bg-zinc-300 px-3 py-1.5 text-sm text-zinc-900"
         onClick={() => {
           setIsActive(!isActive)
         }}
