@@ -19,6 +19,7 @@ const components = [
   { title: "Calculate HEX Alpha", link: "/calculate-hex-alpha/" },
   { title: "Exit Animation", link: "/exit-animation/" },
   { title: "Slider Tabs", link: "/slider-tabs/" },
+  { title: "Animate Height", link: "/animate-height/" },
 ]
 
 const Home: React.FC = () => {
