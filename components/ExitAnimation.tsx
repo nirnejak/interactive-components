@@ -15,7 +15,7 @@ const CalculateHexAlpha: React.FC = () => {
               initial={{ opacity: 0, translateY: 10 }}
               animate={{ opacity: 1, translateY: 0 }}
               exit={{ opacity: 0, translateY: -10 }}
-              className="rounded-md bg-zinc-900 px-7 py-5 text-sm text-slate-50"
+              className="rounded-full bg-zinc-900 px-7 py-3 text-sm text-slate-50"
             >
               Element
             </motion.div>
