@@ -3,7 +3,7 @@ import * as React from "react"
 
 import { AnimatePresence, motion } from "framer-motion"
 
-const CalculateHexAlpha: React.FC = () => {
+const ExitAnimation: React.FC = () => {
   const [isActive, setIsActive] = React.useState(false)
 
   return (
@@ -34,4 +34,4 @@ const CalculateHexAlpha: React.FC = () => {
   )
 }
 
-export default CalculateHexAlpha
+export default ExitAnimation
