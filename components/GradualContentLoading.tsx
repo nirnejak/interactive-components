@@ -28,11 +28,11 @@ const GradualContentLoading: React.FC = () => {
 }
 
 const COPY = [
-  `The registration for the course opens on June 17th, 9AM EST.`,
-  `When you purchase it, you'll get instant access to three 3 chapters, 2 interviews, a Discord invite, and a vault with useful links articles, videos, courses etc.`,
-  `That's 16 lessons, 27 videos, more than 30 interactive examples, 15 exercises with a custom code editor, and a lot of code.`,
-  `All future updates will be free. You'll get notified about a new lesson, interview, or an update to an existing lesson.`,
-  `Students that purchased it, love it, but if you discover that it's not right for you, whatever the reason is, you can ask for a refund at any time by sending an email. No questions asked, and no hard feelings. `,
+  `Framer Motion's my new obsession. It's like magic for web design. I've been playing around with page transitions, and now my site feels like a slick digital mag. So cool!`,
+  `Interactive cards? Total game-changer. I threw in some subtle hover effects - just a smidge of scale and rotation. It's crazy how these tiny tweaks make everything feel alive.`,
+  `Loading screens used to be a snooze fest. Not anymore! I cooked up this quirky little animated mascot. It hops around while content loads. People can't stop talking about it.`,
+  `Micro-interactions are where I'm at right now. Bouncy buttons, smooth expanding menus - the works. These small touches make a huge difference. My UI game's never been stronger.`,
+  `The parallax scrolling effect was my weekend project. Took some trial and error, but man, was it worth it. Now my site's got depth. It's like you can reach into the screen. Addictive to play with!`,
 ]
 
 export default GradualContentLoading
