@@ -2,9 +2,7 @@ import * as React from "react"
 
 import type { Viewport } from "next"
 
-import { GeistMono } from "geist/font/mono"
-import { GeistSans } from "geist/font/sans"
-import { Source_Serif_4 } from "next/font/google"
+import { Inter, Source_Serif_4 } from "next/font/google"
 
 import classNames from "utils/classNames"
 
@@ -13,6 +11,11 @@ import "../styles/main.css"
 export const viewport: Viewport = {
   themeColor: "#000000",
 }
+
+const sansFont = Inter({
+  variable: "--font-sans",
+  subsets: ["latin"],
+})
 
 const serifFont = Source_Serif_4({
   variable: "--font-serif",
@@ -30,8 +33,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
 
       <body
         className={classNames(
-          GeistSans.variable,
-          GeistMono.variable,
+          sansFont.variable,
           serifFont.variable,
           "overflow-x-hidden bg-zinc-900 font-sans"
         )}
