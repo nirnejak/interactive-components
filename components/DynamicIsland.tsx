@@ -2,6 +2,7 @@
 import * as React from "react"
 
 import { ArrowCounterClockwise, Bell, Cross, Pause, Play } from "akar-icons"
+import { motion } from "framer-motion"
 
 import Tabs from "./atoms/Tabs"
 import classNames from "@/utils/classNames"
@@ -48,7 +49,13 @@ const DynamicIsland: React.FC = () => {
       case 2:
         return (
           <>
-            <div className="flex animate-fadeIn gap-2">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ type: "spring", bounce: 0, duration: 0.8 }}
+              className="flex gap-2"
+            >
               <button
                 className="ml-2 rounded-full bg-yellow-600/40 p-3 text-yellow-600"
                 onClick={() => {
@@ -77,7 +84,7 @@ const DynamicIsland: React.FC = () => {
               >
                 <Cross />
               </button>
-            </div>
+            </motion.div>
             <span className="mr-3 text-4xl font-light text-yellow-600">
               0:{seconds.toString().padStart(2, "0")}
             </span>
@@ -86,27 +93,37 @@ const DynamicIsland: React.FC = () => {
     }
   }
 
-  const tabClass = React.useMemo(() => {
+  const tabDimensions = React.useMemo(() => {
     switch (activeTab) {
       case 0:
-        return "w-32 h-10"
+        return {
+          height: 40,
+          width: 128,
+        }
       case 1:
-        return "w-44 h-10"
+        return {
+          height: 40,
+          width: 176,
+        }
       case 2:
-        return "w-72 h-20"
+        return {
+          height: 80,
+          width: 288,
+        }
     }
   }, [activeTab])
 
   return (
     <div className="flex flex-col items-center justify-center gap-3 text-white">
-      <div
+      <motion.div
+        animate={tabDimensions}
+        transition={{ type: "spring", duration: 0.4, bounce: 0 }}
         className={classNames(
-          "flex items-center justify-between rounded-full bg-black px-2 text-sm transition-all ease-out",
-          tabClass
+          "flex items-center justify-between rounded-full bg-black px-2 text-sm ease-out"
         )}
       >
         {renderIslandContent()}
-      </div>
+      </motion.div>
       <Tabs
         className="mt-10 text-zinc-200"
         tabsOptions={["Idle", "Ring", "Timer"]}
