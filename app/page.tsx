@@ -16,7 +16,6 @@ export const metadata: Metadata = generateMetadata({
 
 const components = [
   { title: "Dynamic Island", link: "/dynamic-island/" },
-  { title: "Calculate HEX Alpha", link: "/calculate-hex-alpha/" },
   { title: "Exit Animation", link: "/exit-animation/" },
   { title: "Dynamic Button", link: "/dynamic-button/" },
   { title: "Slider Tabs", link: "/slider-tabs/" },
