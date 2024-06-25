@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 const GradualContentLoading: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-6 text-white">
-      <div className="grid min-h-64 w-96 place-content-center rounded-lg bg-black p-8">
+      <div className="flex min-h-64 w-96 flex-col gap-3.5 rounded-lg bg-black p-8">
         {COPY.map((copy, index) => (
           <motion.p
             initial={{ opacity: 0, translateY: 10 }}
@@ -17,7 +17,7 @@ const GradualContentLoading: React.FC = () => {
               bounce: 0,
             }}
             key={copy}
-            className="mb-5 font-serif text-sm font-normal"
+            className="font-serif text-sm font-normal"
           >
             {copy}
           </motion.p>
