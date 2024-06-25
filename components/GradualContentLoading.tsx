@@ -17,7 +17,7 @@ const GradualContentLoading: React.FC = () => {
               bounce: 0,
             }}
             key={copy}
-            className="font-serif text-sm font-normal"
+            className="font-serif text-base font-normal"
           >
             {copy}
           </motion.p>
@@ -32,7 +32,6 @@ const COPY = [
   `Interactive cards? Total game-changer. I threw in some subtle hover effects - just a smidge of scale and rotation. It's crazy how these tiny tweaks make everything feel alive.`,
   `Loading screens used to be a snooze fest. Not anymore! I cooked up this quirky little animated mascot. It hops around while content loads. People can't stop talking about it.`,
   `Micro-interactions are where I'm at right now. Bouncy buttons, smooth expanding menus - the works. These small touches make a huge difference. My UI game's never been stronger.`,
-  `The parallax scrolling effect was my weekend project. Took some trial and error, but man, was it worth it. Now my site's got depth. It's like you can reach into the screen. Addictive to play with!`,
 ]
 
 export default GradualContentLoading
