@@ -25,19 +25,28 @@ const components = [
 const Home: React.FC = () => {
   return (
     <main className="grid h-screen place-content-center">
-      <div className="mr-24 flex max-w-[580px] flex-col gap-3">
-        {components.map((component, i) => (
-          <Link
-            key={i}
-            href={component.link}
-            className="group flex items-center gap-1.5 text-zinc-200"
-          >
-            <span>{component.title}</span>
-            <span className="transition-all group-hover:translate-x-1">
-              <ArrowRight size={16} />
-            </span>
-          </Link>
-        ))}
+      <div className="max-w-[380px]">
+        <h1 className="mb-4 font-serif text-3xl text-zinc-100">
+          Interactive Animations
+        </h1>
+        <p className="mb-20 font-serif text-base text-zinc-300">
+          A collection of interactive and animated components built with React,
+          TailwindCSS & Framer Motion.
+        </p>
+        <div className="flex flex-col gap-3">
+          {components.map((component, i) => (
+            <Link
+              key={i}
+              href={component.link}
+              className="group flex items-center gap-1.5 text-zinc-200"
+            >
+              <span>{component.title}</span>
+              <span className="transition-all group-hover:translate-x-1">
+                <ArrowRight size={16} />
+              </span>
+            </Link>
+          ))}
+        </div>
       </div>
     </main>
   )
