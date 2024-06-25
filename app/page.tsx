@@ -16,10 +16,10 @@ export const metadata: Metadata = generateMetadata({
 
 const components = [
   { title: "Dynamic Island", link: "/dynamic-island/" },
+  { title: "Animate Height", link: "/animate-height/" },
   { title: "Exit Animation", link: "/exit-animation/" },
   { title: "Dynamic Button", link: "/dynamic-button/" },
   { title: "Slider Tabs", link: "/slider-tabs/" },
-  { title: "Animate Height", link: "/animate-height/" },
 ]
 
 const Home: React.FC = () => {
