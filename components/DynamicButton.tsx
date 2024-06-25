@@ -5,9 +5,9 @@ import { ArrowCycle } from "akar-icons"
 import { AnimatePresence, motion } from "framer-motion"
 
 const buttonCopy = {
-  idle: "Send link",
+  idle: "Submit Form",
   loading: <ArrowCycle size={16} className="animate-spin" />,
-  success: "Link sent!",
+  success: "Submitted!",
 }
 
 const variants = {
