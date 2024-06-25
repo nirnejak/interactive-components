@@ -49,13 +49,7 @@ const DynamicIsland: React.FC = () => {
       case 2:
         return (
           <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ type: "spring", bounce: 0, duration: 0.8 }}
-              className="flex gap-2"
-            >
+            <div className="flex gap-2">
               <button
                 className="ml-2 rounded-full bg-yellow-600/40 p-3 text-yellow-600"
                 onClick={() => {
@@ -84,7 +78,7 @@ const DynamicIsland: React.FC = () => {
               >
                 <Cross />
               </button>
-            </motion.div>
+            </div>
             <span className="mr-3 text-4xl font-light text-yellow-600">
               0:{seconds.toString().padStart(2, "0")}
             </span>
@@ -96,20 +90,11 @@ const DynamicIsland: React.FC = () => {
   const tabDimensions = React.useMemo(() => {
     switch (activeTab) {
       case 0:
-        return {
-          height: 40,
-          width: 128,
-        }
+        return { height: 40, width: 128 }
       case 1:
-        return {
-          height: 40,
-          width: 176,
-        }
+        return { height: 40, width: 176 }
       case 2:
-        return {
-          height: 80,
-          width: 288,
-        }
+        return { height: 80, width: 288 }
     }
   }, [activeTab])
 
