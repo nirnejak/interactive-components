@@ -26,7 +26,7 @@ const components = [
 const Home: React.FC = () => {
   return (
     <main className="grid h-screen place-content-center">
-      <div className="flex max-w-[580px] flex-col gap-3">
+      <div className="mr-24 flex max-w-[580px] flex-col gap-3">
         {components.map((component, i) => (
           <Link
             key={i}
