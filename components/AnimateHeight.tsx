@@ -1,19 +1,36 @@
 "use client"
 import * as React from "react"
-import useMeasure from "react-use-measure"
 
 import { AnimatePresence, motion } from "framer-motion"
 
 const AnimateHeight: React.FC = () => {
+  const elementRef = React.useRef<HTMLDivElement>(null)
   const [showExtraContent, setShowExtraContent] = React.useState(false)
+  const [height, setHeight] = React.useState(0)
 
-  const [elementRef, bounds] = useMeasure()
+  React.useEffect(() => {
+    const observer = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        const rect = entry.target.getBoundingClientRect()
+
+        setHeight(rect.height)
+      }
+    })
+
+    if (elementRef.current !== null) {
+      observer.observe(elementRef.current)
+    }
+
+    return () => {
+      observer.disconnect()
+    }
+  }, [])
 
   return (
     <div className="flex flex-col items-center justify-center gap-6 text-white">
       <div className="grid h-64 w-96 place-content-center rounded-lg bg-black p-4 text-sm transition-all ease-out">
         <motion.div
-          animate={{ height: bounds.height }}
+          animate={{ height }}
           className="rounded-md bg-zinc-900 text-sm text-zinc-50"
         >
           <div ref={elementRef} className="p-6">
