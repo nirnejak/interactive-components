@@ -17,7 +17,7 @@ const rotationClasses = ["-rotate-3", "rotate-6", "rotate-9", "rotate-12"]
 const AirbnbCards: React.FC = () => {
   return (
     <div className="relative mx-auto flex flex-col items-center justify-center">
-      <div className="relative h-52 w-[500px]">
+      <div className="relative h-52 w-[340px] md:w-[500px]">
         {images.map((image, index) => (
           <motion.div
             initial={{ scale: 0.02, opacity: 0 }}
@@ -33,12 +33,12 @@ const AirbnbCards: React.FC = () => {
             }}
             key={index}
             className="absolute"
-            style={{ left: index * 100 }}
+            style={{ left: `${index * 20}%` }}
           >
             <div
               className={classNames(
                 rotationClasses[index],
-                "size-52 rounded-3xl bg-white p-3 shadow-xl"
+                "size-32 md:size-52 rounded-3xl bg-white p-2 md:p-3 shadow-xl"
               )}
             >
               <div
