@@ -1,6 +1,6 @@
 import { type Metadata } from "next"
 
-export const BASE_URL = "https://exaple.com" // Don't include slash at the end
+export const BASE_URL = "https://react-interactive-components.vercel.app" // Don't include slash at the end
 
 interface MetadataArgs {
   path: string
@@ -23,21 +23,20 @@ const generateMetadata = ({
     title: metaTitle,
     description: metaDescription,
 
-    applicationName: "<Application Name>",
-    creator: "<Creator Name>",
-    authors: [{ name: "<Author Name>", url: "<Author Name or Email>" }],
+    applicationName: "Interactive Components",
+    creator: "Jitendra Nirnejak",
+    authors: [{ name: "Jitendra Nirnejak", url: "https://nirnejak.com/" }],
     robots:
       "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
     keywords: [
+      "Interactive",
+      "Components",
+      "React Spring",
+      "Spring Animations",
       "Next.js",
       "TailwindCSS",
       "Framer Motion",
       "TypeScript",
-      "Akar Icons",
-      "ESLint",
-      "Prettier",
-      "JavaScript",
-      "Postgres",
     ],
 
     icons: {
@@ -50,7 +49,7 @@ const generateMetadata = ({
     openGraph: {
       type: "website",
       url: `${BASE_URL}${path}`,
-      siteName: "<Site Name>",
+      siteName: "Interactive Components",
       title: metaTitle,
       description: metaDescription,
       images: metaImage,
@@ -58,8 +57,8 @@ const generateMetadata = ({
 
     twitter: {
       card: "summary_large_image",
-      site: "@site",
-      creator: "@creator",
+      // site: "@site",
+      creator: "@jeetnirnejak",
       title: metaTitle,
       description: metaDescription,
       images: metaImage,
