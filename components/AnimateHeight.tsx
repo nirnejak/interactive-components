@@ -33,7 +33,7 @@ const AnimateHeight: React.FC = () => {
           animate={{ height }}
           className="rounded-md bg-zinc-900 text-sm text-zinc-50"
         >
-          <div ref={elementRef} className="p-6">
+          <div ref={elementRef} className="p-6 font-serif">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
             quas veniam
             {showExtraContent ? (
