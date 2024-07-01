@@ -12,7 +12,7 @@ const GradualContentLoading: React.FC = () => {
             initial={{ opacity: 0, translateY: 10 }}
             animate={{ opacity: 1, translateY: 0 }}
             transition={{
-              delay: 0.12 * index + 1,
+              delay: 0.12 * index,
               type: "spring",
               bounce: 0,
             }}
