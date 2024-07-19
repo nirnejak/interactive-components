@@ -5,6 +5,7 @@ import type { Viewport } from "next"
 import { Inter, Source_Serif_4 } from "next/font/google"
 import localFont from "next/font/local"
 
+import BackButton from "@/components/BackButton"
 import classNames from "utils/classNames"
 
 import "../styles/main.css"
@@ -70,6 +71,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
             </a>
           </p>
         </div>
+        <BackButton />
       </body>
     </html>
   )
