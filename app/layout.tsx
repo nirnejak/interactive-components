@@ -2,7 +2,7 @@ import * as React from "react"
 
 import type { Viewport } from "next"
 
-import { Inter, Source_Serif_4 } from "next/font/google"
+import { Inter, IBM_Plex_Serif } from "next/font/google"
 import localFont from "next/font/local"
 
 import BackButton from "@/components/BackButton"
@@ -19,8 +19,9 @@ const sansFont = Inter({
   subsets: ["latin"],
 })
 
-const serifFont = Source_Serif_4({
+const serifFont = IBM_Plex_Serif({
   variable: "--font-serif",
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 })
 
@@ -59,13 +60,13 @@ const RootLayout: React.FC<Props> = ({ children }) => {
         )}
       >
         {children}
-        <div className="fixed bottom-4 flex w-full text-center text-sm text-zinc-400">
+        <div className="fixed bottom-4 flex w-full text-center font-serif text-sm text-zinc-400">
           <p className="mx-auto">
             Crafted by{" "}
             <a
               target="blank"
               href="https://nirnejak.com"
-              className="transition-colors hover:text-zinc-300"
+              className="text-zinc-300 transition-colors hover:text-zinc-100"
             >
               Jitendra Nirnejak
             </a>
