@@ -24,7 +24,7 @@ const serifFont = Source_Serif_4({
 })
 
 const monoFont = localFont({
-  variable: "--mono-font",
+  variable: "--font-mono",
   src: [
     {
       path: "../fonts/JetBrainsMono-Regular.ttf",
@@ -58,6 +58,18 @@ const RootLayout: React.FC<Props> = ({ children }) => {
         )}
       >
         {children}
+        <div className="fixed bottom-4 flex w-full text-center text-sm text-zinc-400">
+          <p className="mx-auto">
+            Crafted by{" "}
+            <a
+              target="blank"
+              href="https://nirnejak.com"
+              className="transition-colors hover:text-zinc-300"
+            >
+              Jitendra Nirnejak
+            </a>
+          </p>
+        </div>
       </body>
     </html>
   )
