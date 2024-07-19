@@ -17,6 +17,7 @@ export const metadata: Metadata = generateMetadata({
 const components = [
   { title: "Slider Tabs", link: "/slider-tabs/" },
   { title: "Airbnb Cards", link: "/airbnb-cards/" },
+  { title: "Upvote Button", link: "/upvote-button/" },
   { title: "Exit Animation", link: "/exit-animation/" },
   { title: "Dynamic Island", link: "/dynamic-island/" },
   { title: "Animate Height", link: "/animate-height/" },
