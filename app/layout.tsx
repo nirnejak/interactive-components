@@ -3,6 +3,7 @@ import * as React from "react"
 import type { Viewport } from "next"
 
 import { Inter, Source_Serif_4 } from "next/font/google"
+import localFont from "next/font/local"
 
 import classNames from "utils/classNames"
 
@@ -22,6 +23,17 @@ const serifFont = Source_Serif_4({
   subsets: ["latin"],
 })
 
+const monoFont = localFont({
+  variable: "--mono-font",
+  src: [
+    {
+      path: "../fonts/JetBrainsMono-Regular.ttf",
+      weight: "regular",
+      style: "normal",
+    },
+  ],
+})
+
 interface Props {
   children: React.ReactNode
 }
@@ -39,6 +51,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
 
       <body
         className={classNames(
+          monoFont.variable,
           sansFont.variable,
           serifFont.variable,
           "overflow-x-hidden bg-zinc-900 font-sans"
