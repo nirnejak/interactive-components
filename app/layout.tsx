@@ -2,7 +2,7 @@ import * as React from "react"
 
 import type { Viewport } from "next"
 
-import { Inter, IBM_Plex_Serif } from "next/font/google"
+import { Inter, IBM_Plex_Serif, Instrument_Serif } from "next/font/google"
 import localFont from "next/font/local"
 
 import BackButton from "@/components/BackButton"
@@ -21,7 +21,13 @@ const sansFont = Inter({
 
 const serifFont = IBM_Plex_Serif({
   variable: "--font-serif",
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500"],
+  subsets: ["latin"],
+})
+
+const instrumentSerifFont = Instrument_Serif({
+  variable: "--font-instrument-serif",
+  weight: ["400"],
   subsets: ["latin"],
 })
 
@@ -56,6 +62,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
           monoFont.variable,
           sansFont.variable,
           serifFont.variable,
+          instrumentSerifFont.variable,
           "overflow-x-hidden bg-zinc-900 font-sans"
         )}
       >
