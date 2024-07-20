@@ -57,7 +57,7 @@ const JellyTags: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-6 text-white">
-      <div className="h-64 w-44 rounded-lg bg-white p-4 pl-[95px] pt-[110px] text-sm md:h-[560px] md:w-[984px]">
+      <div className="h-full w-[calc(100vw-40px)] rounded-lg bg-white p-6 text-sm md:h-[560px] md:w-[984px] md:p-4 md:pl-[95px] md:pt-[110px]">
         <h1 className="mb-6 font-instrument-serif text-[40px] leading-[48px] text-gray-900">
           What are your favorite cuisines?
         </h1>
