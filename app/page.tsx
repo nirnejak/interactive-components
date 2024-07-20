@@ -15,6 +15,7 @@ export const metadata: Metadata = generateMetadata({
 })
 
 const components = [
+  { title: "Jelly Tags", link: "/jelly-tags/" },
   { title: "Slider Tabs", link: "/slider-tabs/" },
   { title: "Airbnb Cards", link: "/airbnb-cards/" },
   { title: "Upvote Button", link: "/upvote-button/" },
