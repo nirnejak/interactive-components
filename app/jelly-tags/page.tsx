@@ -7,7 +7,7 @@ import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({
   path: "/jelly-tags/",
-  title: "Jelly Tags | Interactive Components",
+  title: "Jelly Tags | Interactive Interfaces",
   description: "Jelly Tags animation",
 })
 

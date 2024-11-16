@@ -7,7 +7,7 @@ import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({
   path: "/dynamic-island/",
-  title: "Dynamic Island | Interactive Components",
+  title: "Dynamic Island | Interactive Interfaces",
   description:
     "A Dynamic Island built for web with React, TypeScript and TailwindCSS",
 })

@@ -7,7 +7,7 @@ import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({
   path: "/slider-tabs/",
-  title: "Slider Tabs | Interactive Components",
+  title: "Slider Tabs | Interactive Interfaces",
   description: "Tabs with active state indicator that moves",
 })
 

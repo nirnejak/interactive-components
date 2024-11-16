@@ -7,7 +7,7 @@ import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({
   path: "/gradual-content-loading/",
-  title: "Gradual Content Loading | Interactive Components",
+  title: "Gradual Content Loading | Interactive Interfaces",
   description: "Gradual Content Loading",
 })
 

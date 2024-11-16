@@ -1,5 +1,5 @@
 <h1 align="center">
-  Interactive Components
+  Interactive Interfaces
 </h1>
 
 ---

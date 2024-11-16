@@ -7,7 +7,7 @@ import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({
   path: "/airbnb-cards/",
-  title: "Airbnb Cards | Interactive Components",
+  title: "Airbnb Cards | Interactive Interfaces",
   description: "Airbnb cards loading animation",
 })
 

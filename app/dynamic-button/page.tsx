@@ -7,7 +7,7 @@ import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({
   path: "/dynamic-button/",
-  title: "Dynamic Button | Interactive Components",
+  title: "Dynamic Button | Interactive Interfaces",
   description: "Button with dynamic state and content",
 })
 

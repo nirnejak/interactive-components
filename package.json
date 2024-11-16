@@ -1,6 +1,6 @@
 {
-  "name": "interactive-components",
-  "description": "A Gallery of interactive components made with React, TailwindCSS, Framer Motion and TypeScript",
+  "name": "interactive-interfaces",
+  "description": "A Gallery of interactive interfaces made with React, TailwindCSS, Framer Motion and TypeScript",
   "version": "1.0.0",
   "author": "Jitendra Nirnejak <jeetnirnejak@gmail.com>",
   "scripts": {
@@ -66,9 +66,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nirnejak/interactive-components"
+    "url": "https://github.com/nirnejak/interactive-interfaces"
   },
   "bugs": {
-    "url": "https://github.com/nirnejak/interactive-components/issues"
+    "url": "https://github.com/nirnejak/interactive-interfaces/issues"
   }
 }

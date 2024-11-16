@@ -7,7 +7,7 @@ import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({
   path: "/exit-animation/",
-  title: "Exit Animation | Interactive Components",
+  title: "Exit Animation | Interactive Interfaces",
   description: "Exit and Entry animation for elements",
 })
 

@@ -7,7 +7,7 @@ import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({
   path: "/animate-height/",
-  title: "Animate Height | Interactive Components",
+  title: "Animate Height | Interactive Interfaces",
   description: "Animate height change of the element",
 })
 
