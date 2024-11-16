@@ -11,7 +11,7 @@ export const metadata: Metadata = generateMetadata({
   path: "/",
   title: "Interactive Interfaces",
   description:
-    "A collection of interactive and animated components made with React, TailwindCSS, Framer Motion and TypeScript",
+    "A collection of interactive interfaces crafted with React, TailwindCSS, Framer Motion, and TypeScript.",
 })
 
 const components = [
@@ -34,8 +34,8 @@ const Home: React.FC = () => {
           Interactive Interfaces
         </h1>
         <p className="mb-20 font-serif text-base text-zinc-300">
-          A collection of interactive and animated components built with React,
-          TypeScript, TailwindCSS & Framer Motion.
+          A collection of interactive interfaces crafted with React,
+          TailwindCSS, Framer Motion, and TypeScript.
         </p>
         <div className="flex flex-col gap-3">
           {components.map((component, i) => (
