@@ -13,6 +13,9 @@ const MelodyPopup: React.FC = () => {
   const [isPlaying, setIsPlaying] = React.useState(false)
   const [progress, setProgress] = React.useState(0)
 
+  console.log(height)
+  console.log(progress)
+
   const [isHovering, setIsHovering] = React.useState(false)
 
   React.useEffect(() => {
