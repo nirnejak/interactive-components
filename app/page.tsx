@@ -9,7 +9,7 @@ import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({
   path: "/",
-  title: "Interactive Components",
+  title: "Interactive Interfaces",
   description:
     "A collection of interactive and animated components made with React, TailwindCSS, Framer Motion and TypeScript",
 })
@@ -31,7 +31,7 @@ const Home: React.FC = () => {
     <main className="grid h-screen place-content-center">
       <div className="max-w-[380px]">
         <h1 className="mb-4 font-serif text-3xl text-zinc-100">
-          Interactive Components
+          Interactive Interfaces
         </h1>
         <p className="mb-20 font-serif text-base text-zinc-300">
           A collection of interactive and animated components built with React,

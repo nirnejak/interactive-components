@@ -7,7 +7,7 @@ import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({
   path: "/upvote-button/",
-  title: "Upvote Button | Interactive Components",
+  title: "Upvote Button | Interactive Interfaces",
   description: "Upvote Button animations",
 })
 

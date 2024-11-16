@@ -1,6 +1,6 @@
 import { type Metadata } from "next"
 
-export const BASE_URL = "https://react-interactive-components.vercel.app" // Don't include slash at the end
+export const BASE_URL = "https://interactive-interfaces.vercel.app" // Don't include slash at the end
 
 interface MetadataArgs {
   path: string
@@ -23,7 +23,7 @@ const generateMetadata = ({
     title: metaTitle,
     description: metaDescription,
 
-    applicationName: "Interactive Components",
+    applicationName: "Interactive Interfaces",
     creator: "Jitendra Nirnejak",
     authors: [{ name: "Jitendra Nirnejak", url: "https://nirnejak.com/" }],
     robots:
@@ -49,7 +49,7 @@ const generateMetadata = ({
     openGraph: {
       type: "website",
       url: `${BASE_URL}${path}`,
-      siteName: "Interactive Components",
+      siteName: "Interactive Interfaces",
       title: metaTitle,
       description: metaDescription,
       images: metaImage,
