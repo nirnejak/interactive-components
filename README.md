@@ -2,6 +2,8 @@
   Interactive Interfaces
 </h1>
 
+A collection of interactive interfaces crafted with React, TailwindCSS, Framer Motion, and TypeScript.
+
 ---
 
 ## Available Scripts
