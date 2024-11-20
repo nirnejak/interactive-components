@@ -34,8 +34,8 @@ const Home: React.FC = () => {
           Interactive Interfaces
         </h1>
         <p className="mb-20 font-serif text-base text-zinc-300">
-          A collection of interactive interfaces crafted with React,
-          TailwindCSS, Framer Motion, and TypeScript.
+          A collection of interactive interfaces crafted with React, TypeScript,
+          TailwindCSS, Framer Motion, and a tiny bit of CSS animations.
         </p>
         <div className="flex flex-col gap-3">
           {components.map((component, i) => (
