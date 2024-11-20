@@ -6,7 +6,7 @@
     "start_url": "/",
     "name": "Interactive Interfaces",
     "short_name": "Interactive Interfaces",
-    "description": "A Gallery of interactive interfaces made with React, TailwindCSS, Framer Motion and TypeScript",
+    "description": "A collection of interactive interfaces crafted with React, TailwindCSS, Framer Motion, and TypeScript.",
     "icons": [
         {
             "src": "/path-to-icons/icon-192x192.png",
