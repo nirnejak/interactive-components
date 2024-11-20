@@ -33,7 +33,7 @@ const Home: React.FC = () => {
         <h1 className="mb-4 font-serif text-3xl text-zinc-100">
           Interactive Interfaces
         </h1>
-        <p className="mb-16 max-w-[380px] font-serif text-base text-zinc-300">
+        <p className="mb-24 max-w-[380px] font-serif text-base text-zinc-300">
           A collection of interactive interfaces crafted with React, TypeScript,
           TailwindCSS, Framer Motion, and a tiny bit of CSS animations.
         </p>
@@ -42,12 +42,11 @@ const Home: React.FC = () => {
             <Link
               key={i}
               href={component.link}
-              className="group flex items-center gap-1.5 text-zinc-200"
+              className="flex items-center gap-2 text-zinc-200 transition-all hover:scale-105"
             >
               <span>{component.title}</span>
-              <span className="transition-all group-hover:translate-x-1">
-                <ArrowRight size={16} />
-              </span>
+              <div className="flex-1 border-t border-dashed border-zinc-700" />
+              <ArrowRight size={16} />
             </Link>
           ))}
         </div>
