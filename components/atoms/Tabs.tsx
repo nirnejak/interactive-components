@@ -26,7 +26,7 @@ const Tabs: React.FC<Props> = ({
     >
       <div
         style={highlightStyles}
-        className="absolute left-0 h-full rounded-lg bg-zinc-800 transition-all"
+        className="absolute left-0 h-full rounded-lg bg-zinc-800 transition-all duration-300"
       />
       {tabsOptions.map((tab, index) => (
         <button
