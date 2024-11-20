@@ -71,8 +71,8 @@ const RootLayout: React.FC<Props> = ({ children }) => {
           <p className="mx-auto">
             Crafted by{" "}
             <a
-              target="blank"
-              href="https://nirnejak.com"
+              target="_blank"
+              href="https://nirnejak.com/"
               className="text-zinc-300 transition-colors hover:text-zinc-100"
             >
               Jitendra Nirnejak
