@@ -2,10 +2,14 @@ import * as React from "react"
 
 import type { Viewport } from "next"
 
-import { Inter, IBM_Plex_Serif, Instrument_Serif } from "next/font/google"
-import localFont from "next/font/local"
+import {
+  Inter,
+  IBM_Plex_Serif,
+  Instrument_Serif,
+  JetBrains_Mono,
+} from "next/font/google"
 
-import BackButton from "@/components/BackButton"
+import BackButton from "components/BackButton"
 import classNames from "utils/classNames"
 
 import "../styles/main.css"
@@ -25,21 +29,16 @@ const serifFont = IBM_Plex_Serif({
   subsets: ["latin"],
 })
 
-const instrumentSerifFont = Instrument_Serif({
-  variable: "--font-instrument-serif",
+const monoFont = JetBrains_Mono({
+  variable: "--font-mono",
   weight: ["400"],
   subsets: ["latin"],
 })
 
-const monoFont = localFont({
-  variable: "--font-mono",
-  src: [
-    {
-      path: "../fonts/JetBrainsMono-Regular.ttf",
-      weight: "regular",
-      style: "normal",
-    },
-  ],
+const instrumentSerifFont = Instrument_Serif({
+  variable: "--font-instrument-serif",
+  weight: ["400"],
+  subsets: ["latin"],
 })
 
 interface Props {
