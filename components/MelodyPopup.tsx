@@ -4,8 +4,8 @@ import * as React from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 
-import PeerlistMelodyPopup from "@/assets/peerlist-melody-popup.png"
-import classNames from "@/utils/classNames"
+import PeerlistMelodyPopup from "assets/peerlist-melody-popup.png"
+import classNames from "utils/classNames"
 
 const MelodyPopup: React.FC = () => {
   const elementRef = React.useRef<HTMLDivElement>(null)

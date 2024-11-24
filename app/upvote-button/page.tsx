@@ -2,7 +2,7 @@ import * as React from "react"
 
 import { type Metadata } from "next"
 
-import UpvoteButton from "@/components/UpvoteButton"
+import UpvoteButton from "components/UpvoteButton"
 import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({

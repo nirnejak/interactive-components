@@ -2,7 +2,7 @@ import * as React from "react"
 
 import { type Metadata } from "next"
 
-import AnimateHeight from "@/components/AnimateHeight"
+import AnimateHeight from "components/AnimateHeight"
 import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({

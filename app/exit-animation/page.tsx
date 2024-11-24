@@ -2,7 +2,7 @@ import * as React from "react"
 
 import { type Metadata } from "next"
 
-import ExitAnimation from "@/components/ExitAnimation"
+import ExitAnimation from "components/ExitAnimation"
 import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({
