@@ -51,9 +51,9 @@ const RootLayout: React.FC<Props> = ({ children }) => {
       <head>
         <script
           defer
-          data-domain="react-interactive-components.vercel.app"
+          data-domain="interactive-interfaces.vercel.app"
           src="https://plausible.io/js/script.js"
-        />
+        ></script>
       </head>
 
       <body
