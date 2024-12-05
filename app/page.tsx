@@ -38,12 +38,12 @@ const Home: React.FC = () => {
           A collection of interactive interfaces crafted with React, TypeScript,
           TailwindCSS, Framer Motion, and a tiny bit of CSS animations.
         </p>
-        <div className="flex flex-col gap-3">
+        <div>
           {components.map((component, i) => (
             <Link
               key={i}
               href={component.link}
-              className="flex items-center gap-2 text-zinc-200 transition-all hover:scale-105"
+              className="flex items-center gap-2 py-1.5 text-zinc-200 transition-all hover:scale-110"
             >
               <span>{component.title}</span>
               <div className="flex-1 border-t border-dashed border-zinc-700" />
