@@ -30,7 +30,7 @@ const components = [
 const Home: React.FC = () => {
   return (
     <main className="grid min-h-screen place-content-center">
-      <div className="max-w-[820px]">
+      <div className="max-w-[820px] px-5 md:px-0">
         <h1 className="mb-4 font-serif text-3xl text-zinc-100">
           Interactive Interfaces
         </h1>
